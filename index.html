@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="Product-left">
+            <div id="logo-header">
+                <a href="index.html">
+                    <img src="https://shwebank-image.s3.ap-southeast-1.amazonaws.com/home-slide/slide2.png" alt="logo">
+                </a>
+            </div>
+            <div id="search-box">
+                <input type="text" placeholder="Search menu">
+            </div>
+            <div id="menu-list">
+                <ul>
+                    <li>
+                        <a href="" class="active">
+                            <div>
+                                <i class="fas fa-user"></i>
+
+                            </div>
+                            <div class="active-icon">
+                                <div><strong>Customer</strong></div>
+                                <div><i class="fas fa-caret-left"></i></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="active">
+                            <div>
+                                <i class="fa fa-home"></i>
+
+                            </div>
+                            <div class="active-icon">
+                                <div><strong>Corporate</strong></div>
+                                <div><i class="fas fa-caret-left"></i></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="active">
+                            <div>
+                                <i class="fas fa-exchange-alt"></i>
+
+                            </div>
+                            <div class="active-icon">
+                                <div><strong>Transation</strong></div>
+                                <div><i class="fas fa-caret-left"></i></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="active">
+                            <div>
+                                <i class="fas fa-cog"></i>
+
+                            </div>
+                            <div class="active-icon">
+                                <div><strong>System</strong></div>
+                                <div><i class="fas fa-caret-left"></i></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="active">
+                            <div>
+                                <i class="fas fa-clipboard-list"></i>
+
+                            </div>
+                            <div class="active-icon">
+                                <div><strong>Lists</strong></div>
+                                <div><i class="fas fa-caret-left"></i></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="active">
+                            <div>
+                                <i class="fas fa-dollar-sign"></i>
+
+                            </div>
+                            <div class="active-icon">
+                                <div><strong>Fee</strong></div>
+                                <div><i class="fas fa-caret-left"></i></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="active">
+                            <div>
+                                <i class="far fa-comment-alt"></i>
+
+                            </div>
+                            <div class="active-icon">
+                                <div><strong>Notice</strong></div>
+                                <div><i class="fas fa-caret-left"></i></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="active">
+                            <div>
+                                <i class="fas fa-sliders-h"></i>
+
+                            </div>
+                            <div class="active-icon">
+                                <div><strong>Limit</strong></div>
+                                <div><i class="fas fa-caret-left"></i></div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="" class="active">
+                            <div>
+                                <i class="fas fa-tv"></i>
+
+                            </div>
+                            <div class="active-icon">
+                                <div><strong>Media</strong></div>
+                                <div><i class="fas fa-caret-left"></i></div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- <div id="menu-logout">
+                <a href="">
+                    <div class="menu-logout">
+                        <div>
+                            <i class="fas fa-sign-out-alt"></i>
+                        </div>
+                        <div class="active-icon">
+                            <strong>Logout</strong>
+                            <i class="fas fa-chevron-left"></i>
+                        </div>
+                    </div>
+                </a>
+            </div> -->
+        </div>
+
+        <div id="Product-right">
+            <div id="header-user">
+                <div><i class="fas fa-bars"></i></div>
+                <div>
+                    LE VU QUANG
+                </div>
+            </div>
+            <div id="header-title">
+                <div id="header-title-head">
+                    <h2>BO Product List</h2>
+                </div>
+                <div id="header-title-link">Home > Lists > Product</div>
+            </div>
+            <div id="Product-btn">
+                <div id="Product-btn-add">
+
+                    <button id="btn-add-new">
+                        <is class="fas fa-plus"></is>Add New</a>
+                    </button>
+                </div>
+                <div id="Product-btn-delete">
+                    <button><i class="far fa-trash-alt"></i>Delete</button>
+                </div>
+            </div>
+            <div id="Product-ip">
+                <div id="Product-ip-name">
+                    <div class="Product-ip-name">Product name</div>
+                    <div class="Product-ip-name2">
+                        <input type="text" name="" id="product-name">
+                    </div>
+                </div>
+                <div id="Product-ip-active">
+                    <div class="Product-ip-active">Active</div>
+                    <div class="Product-ip-active2">
+                        <select name="" id="active-select">
+                            <option value="smartphones">smartphones</option>
+                            <option value="laptops">laptops</option>
+                            <option value="fragrances">fragrances</option>
+                            <option value="skincare">skincare</option>
+                            <option value="groceries">groceries</option>
+                            <option value="home-decoration">home-decoration</option>
+                            <option value="all">all</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div id="Product-btn-2">
+                <div id="Product-btn-search">
+                    <button class="Product-btn-search"><i class="fas fa-search"></i>Search</button>
+                </div>
+                <div id="Product-btn-clear">
+                    <button><i class="fas fa-ban"></i>Clear</button>
+                </div>
+            </div>
+            <div id="table-data">
+                <table class="table table-bordered data-table">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>Product ID</th>
+                            <th>Product Name</th>
+                            <th>Customer Type</th>
+                            <th>Active</th>
+                            <th>Description</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="userTable">
+                        <!-- Dữ liệu từ API sẽ được thêm vào đây -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="pagination">
+                <div class="">
+                    <span>Page Size:</span>
+                    <select id="page-size" class="dropdown">
+                        <option value="15">15</option>
+                        <option value="25">25</option>
+                        <option value="50">50</option>
+                    </select>
+                </div>
+                <span id="pagination-display">Displaying: 1 - 9 of 9</span>
+                <div class="">
+                    <button class="pagination-button prev-button">&lt;</button>
+                    <button class="pagination-button next-button">&gt;</button>
+                </div>
+            </div>
+            <footer>
+
+            </footer>
+        </div>
+        <div id="Product-right2" style="display: none;">
+            <div id="header-user">
+                <div><i class="fas fa-bars"></i></div>
+                <div>
+                    LE VU QUANG
+                </div>
+            </div>
+            <div id="header-title">
+                <div id="header-title-head">
+                    <h2>Add New Product</h2>
+                </div>
+                <div id="header-title-link">Home > Lists > Product</div>
+            </div>
+            <form id="add-product-form">
+                <div id="Product-ip">
+                    <div id="Product-ip-name">
+                        <div class="Product-ip-name">Product name</div>
+                        <div class="Product-ip-name2">
+                            <input type="text" name="product-name" id="product-name-add">
+                        </div>
+                    </div>
+                    <div id="Product-ip-active">
+                        <div class="Product-ip-active">Active</div>
+                        <div class="Product-ip-active2">
+                            <select name="active-select" id="active-select">
+                                <option value="smartphones">smartphones</option>
+                                <option value="laptops">laptops</option>
+                                <option value="fragrances">fragrances</option>
+                                <option value="skincare">skincare</option>
+                                <option value="groceries">groceries</option>
+                                <option value="home-decoration">home-decoration</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="Product-ip">
+                    <div id="Product-ip-name">
+                        <div class="Product-ip-name">Customer Type</div>
+                        <div class="Product-ip-name2">
+                            <input type="text" name="customer-type" id="customer-type">
+                        </div>
+                    </div>
+                    <div id="Product-ip-name">
+                        <div class="Product-ip-name">Description</div>
+                        <div class="Product-ip-name2">
+                            <textarea style="width: 300%;" name="description" id="description"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="Product-btn-2">
+                    <div id="Product-btn-add">
+                        <button type="submit" id="btn-add-product"><i class="fas fa-plus"></i>Save</button>
+                    </div>
+                    <div id="Product-btn-clear ">
+                        <button type="button" id="clear-button"></i>Back</button>
+                    </div>
+                </div>
+            </form>
+            <footer>
+            </footer>
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="./script.js"></script>
+
+</html>
