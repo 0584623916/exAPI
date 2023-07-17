@@ -21,17 +21,15 @@ document.addEventListener("DOMContentLoaded", function () {
   let totalItems = 0;
   let totalPages = 0;
 
-  // Hàm start() 
+
   function start() {
     addEventListeners(); 
     console.log(localStorage.getItem("productList"));
     if (!localStorage.getItem("productList")) {
-      getCourses(saveDataAndRender); // Lấy dữ liệu từ API nếu chưa có trong localStorage
+      getCourses(saveDataAndRender); 
     } else {
-      renderFromLocalStorage(); // Render dữ liệu từ localStorage
+      renderFromLocalStorage(); 
     }
-
-    // Fetch lại dữ liệu từ storage nếu đang ở trang index.html
     if (window.location.pathname.includes("index.html")) {
       renderFromLocalStorage();
     }
@@ -246,7 +244,7 @@ document.addEventListener("DOMContentLoaded", function () {
         );
 
         localStorage.setItem("productList", JSON.stringify(updatedProductList));
-        renderFromLocalStorage(); // Fetch the updated data from local storage and re-render
+        renderFromLocalStorage(); 
       }
     }
   }
