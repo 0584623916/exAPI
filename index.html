@@ -149,12 +149,128 @@
             </div> -->
         </div>
 
-        <div id="Product-right">
+        <div id="Product-right" >
             <div id="header-user">
-                <div><i class="fas fa-bars"></i></div>
-                <div>
+                <div class="mobie-icon">
+                    <span class="material-icons-outlined open"><i class="fas fa-bars"></i></span>
+                    <span class="material-icons-outlined close"><i class="fas fa-times"></i></span>
+                </div>
+                <div class="icon-text">
                     LE VU QUANG
                 </div>
+                <nav class="menu-mobile">
+                    <ul class="menu-mobile-list">
+                        <li class="items">
+                            <a href="" class="active">
+                                <div>
+                                    <i class="fas fa-user"></i>
+    
+                                </div>
+                                <div class="active-icon">
+                                    <div><strong>Customer</strong></div>
+                                    <div><i class="fas fa-caret-left"></i></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="items">
+                            <a href="" class="active">
+                                <div>
+                                    <i class="fa fa-home"></i>
+    
+                                </div>
+                                <div class="active-icon">
+                                    <div><strong>Corporate</strong></div>
+                                    <div><i class="fas fa-caret-left"></i></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="items">
+                            <a href="" class="active">
+                                <div>
+                                    <i class="fas fa-exchange-alt"></i>
+    
+                                </div>
+                                <div class="active-icon">
+                                    <div><strong>Transation</strong></div>
+                                    <div><i class="fas fa-caret-left"></i></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="items">
+                            <a href="" class="active">
+                                <div>
+                                    <i class="fas fa-cog"></i>
+    
+                                </div>
+                                <div class="active-icon">
+                                    <div><strong>System</strong></div>
+                                    <div><i class="fas fa-caret-left"></i></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="items">
+                            <a href="" class="active">
+                                <div>
+                                    <i class="fas fa-clipboard-list"></i>
+    
+                                </div>
+                                <div class="active-icon">
+                                    <div><strong>Lists</strong></div>
+                                    <div><i class="fas fa-caret-left"></i></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="items">
+                            <a href="" class="active">
+                                <div>
+                                    <i class="fas fa-dollar-sign"></i>
+    
+                                </div>
+                                <div class="active-icon">
+                                    <div><strong>Fee</strong></div>
+                                    <div><i class="fas fa-caret-left"></i></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="items">
+                            <a href="" class="active">
+                                <div>
+                                    <i class="far fa-comment-alt"></i>
+    
+                                </div>
+                                <div class="active-icon">
+                                    <div><strong>Notice</strong></div>
+                                    <div><i class="fas fa-caret-left"></i></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="items">
+                            <a href="" class="active">
+                                <div>
+                                    <i class="fas fa-sliders-h"></i>
+    
+                                </div>
+                                <div class="active-icon">
+                                    <div><strong>Limit</strong></div>
+                                    <div><i class="fas fa-caret-left"></i></div>
+                                </div>
+                            </a>
+                        </li>
+    
+                        <li class="items">
+                            <a href="" class="active">
+                                <div>
+                                    <i class="fas fa-tv"></i>
+    
+                                </div>
+                                <div class="active-icon">
+                                    <div><strong>Media</strong></div>
+                                    <div><i class="fas fa-caret-left"></i></div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
             <div id="header-title">
                 <div id="header-title-head">
@@ -169,9 +285,9 @@
                         <is class="fas fa-plus"></is>Add New</a>
                     </button>
                 </div>
-                <div id="Product-btn-delete">
+                <!-- <div id="Product-btn-delete">
                     <button><i class="far fa-trash-alt"></i>Delete</button>
-                </div>
+                </div> -->
             </div>
             <div id="Product-ip">
                 <div id="Product-ip-name">
@@ -200,10 +316,10 @@
                     <button class="Product-btn-search"><i class="fas fa-search"></i>Search</button>
                 </div>
                 <div id="Product-btn-clear">
-                    <button><i class="fas fa-ban"></i>Clear</button>
+                    <button class="Product-btn-clear"><i class="fas fa-ban"></i>Clear</button>
                 </div>
             </div>
-            <div id="table-data">
+            <div id="table-data" style="overflow-x:auto;">
                 <table class="table table-bordered data-table">
                     <thead class="thead-light">
                         <tr>
@@ -285,7 +401,7 @@
                     <div id="Product-ip-name">
                         <div class="Product-ip-name">Description</div>
                         <div class="Product-ip-name2">
-                            <textarea style="width: 300%;" name="description" id="description"></textarea>
+                            <textarea style="width: 100%;" name="description" id="description"></textarea>
                         </div>
                     </div>
                 </div>
@@ -306,5 +422,12 @@
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="./script.js"></script>
+<script>
+    $(document).ready(function(){
+      $('.mobie-icon').click(function(){
+        $('body').toggleClass("is-mobie");
+      });
+    });
+ </script>
 
 </html>
